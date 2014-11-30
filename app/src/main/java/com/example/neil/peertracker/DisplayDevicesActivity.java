@@ -31,8 +31,11 @@ public class DisplayDevicesActivity extends ListActivity implements LoaderManage
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        ProgressBar progressBar = new ProgressBar(this);
-        LayoutParams layoutParams = new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT, Gravity.CENTER);
+        ProgressBar progressBar;
+        LayoutParams layoutParams;
+
+        progressBar = new ProgressBar(this);
+        layoutParams = new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT, Gravity.CENTER);
         progressBar.setLayoutParams(layoutParams);
         progressBar.setIndeterminate(true);
         getListView().setEmptyView(progressBar);
@@ -40,10 +43,10 @@ public class DisplayDevicesActivity extends ListActivity implements LoaderManage
         ViewGroup root = (ViewGroup) findViewById(android.R.id.content);
         root.addView(progressBar);
 
-        String[] fromColumns = {ContactsContract.Data.DISPLAY_NAME};
-        int[] toViews = {android.R.id.text1};
+        String[] fromColumns = {ContactsContract.Data.DISPLAY_NAME, ContactsContract.Data._ID};
+        int[] toViews = {android.R.id.text1, android.R.id.text2};
 
-        mAdapter = new SimpleCursorAdapter(this, android.R.layout.simple_list_item_1, null, fromColumns, toViews, 0);
+        mAdapter = new SimpleCursorAdapter(this, android.R.layout.simple_list_item_2, null, fromColumns, toViews, 0);
         setListAdapter(mAdapter);
 
         getLoaderManager().initLoader(0, null, this);
