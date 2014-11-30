@@ -32,8 +32,8 @@ public class PeerTracker extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        //HandlerThread busThread = new HandlerThread("BusHandler");
-        //busThread.start();
+        HandlerThread busThread = new HandlerThread("BusHandler");
+        busThread.start();
     }
 
 

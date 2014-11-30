@@ -40,7 +40,7 @@ public class NetworksListActivity extends ListActivity {
         m_loadingPopup = new ProgressDialog(this);
     }
 
-    protected void scanNetwork(View view) {
+    public void scanNetwork(View view) {
         m_progressDialog = ProgressDialog.show(NetworksListActivity.this, "", getString(R.string.network_activity_scanning));
         m_networkManager.scanForNetwork(getApplicationContext(), new WifiManagerListener() {
             public void OnScanResultComplete(final List<ScanResult> results) {
