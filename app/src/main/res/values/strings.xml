@@ -11,5 +11,17 @@
     <string name="main_quit">Quit</string>
     <string name="title_activity_display_devices">Active Devices</string>
     <string name="no_active_device">No Active Device</string>
+    <string name="title_activity_peer_list">PeerListActivity</string>
+    <string name="title_activity_peers_list">PeersListActivity</string>
+    <string name="title_activity_networks_list">NetworksListActivity</string>
+
+    <string name="scan_networks">Scan Networks</string>
+    <string name="scan_choose_network">Choose network to connect</string>
+    <string name="enter_wifi_password_title">Enter password</string>
+    <string name="enter_wifi_password_message">Enter password if needed. If your WIFI is free, leave this field empty</string>
+    <string name="connecting_to">"Connecting to %s"</string>
+    <string name="failed_to_connect_to_wifi_title">Failed to connect</string>
+    <string name="failed_to_connect_to_wifi_message">"Failed to connect to %s. Please try to refresh your list, or enter another password and try again"</string>
+    <string name="network_activity_scanning">Scanning&#8230;</string>
 
 </resources>
