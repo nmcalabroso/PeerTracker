@@ -7,8 +7,9 @@
     <string name="title_activity_splash">SplashActivity</string>
     <string name="loading">Loading</string>
     <string name="logo">Logo</string>
-    <string name="active_devices">Active Devices</string>
-    <string name="main_continue">Continue</string>
-    <string name="title_activity_display_devices">DisplayDevicesActivity</string>
+    <string name="main_confirm">Confirm</string>
+    <string name="main_quit">Quit</string>
+    <string name="title_activity_display_devices">Active Devices</string>
+    <string name="no_active_device">No Active Device</string>
 
 </resources>

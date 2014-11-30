@@ -9,7 +9,16 @@ import android.view.View;
 
 
 public class MainActivity extends Activity {
-    
+
+    public void confirm(View view){
+        Intent intent = new Intent(this, DisplayDevicesActivity.class);
+        startActivity(intent);
+    }
+
+    public void quit(View view){
+        finish();
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

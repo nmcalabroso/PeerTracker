@@ -22,10 +22,19 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/main_continue"
-        android:id="@+id/button"
+        android:text="@string/main_confirm"
+        android:id="@+id/button_confirm"
         android:layout_below="@+id/imageView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:onClick="continue"/>
+        android:onClick="confirm"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_quit"
+        android:id="@+id/button_quit"
+        android:layout_below="@+id/button_confirm"
+        android:layout_centerHorizontal="true"
+        android:onClick="quit"/>
 </RelativeLayout>
