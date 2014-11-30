@@ -42,6 +42,7 @@ public class NetworksListActivity extends ListActivity {
 
     public void scanNetwork(View view) {
         m_progressDialog = ProgressDialog.show(NetworksListActivity.this, "", getString(R.string.network_activity_scanning));
+        System.out.println(getApplicationContext());
         m_networkManager.scanForNetwork(getApplicationContext(), new WifiManagerListener() {
             public void OnScanResultComplete(final List<ScanResult> results) {
                 runOnUiThread(new Runnable() {
