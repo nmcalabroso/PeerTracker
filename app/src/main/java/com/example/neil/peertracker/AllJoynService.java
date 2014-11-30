@@ -4,14 +4,18 @@ import android.app.IntentService;
 import android.content.Intent;
 import android.os.IBinder;
 
-public class AllJoynService extends IntentService {
+import org.alljoyn.bus.BusAttachment;
 
-    public AllJoynService() {
-        super("AllJoynService");
-    }
+public class AllJoynService extends IntentService {
 
     static {
         System.loadLibrary("alljoyn_java");
+    }
+
+    private BusAttachment mBus;
+
+    public AllJoynService() {
+        super("AllJoynService");
     }
 
     @Override

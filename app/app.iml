@@ -81,8 +81,14 @@
     <orderEntry type="jdk" jdkName="Android API 21 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="alljoyn_onboarding_manager" level="project" />
+    <orderEntry type="library" exported="" name="ControlPanelAdapter" level="project" />
+    <orderEntry type="library" exported="" name="alljoyn_config" level="project" />
+    <orderEntry type="library" exported="" name="ControlPanelService" level="project" />
     <orderEntry type="library" exported="" name="alljoyn" level="project" />
     <orderEntry type="library" exported="" name="alljoyn_onboarding" level="project" />
+    <orderEntry type="library" exported="" name="NotificationService" level="project" />
+    <orderEntry type="library" exported="" name="NSCommons" level="project" />
+    <orderEntry type="library" exported="" name="NSNativePlatformAndr" level="project" />
   </component>
 </module>
 
