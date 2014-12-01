@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <item
+        android:id="@+id/menu_onboarding_refresh"
+        android:title="@string/refresh"/>
+    <item
+        android:id="@+id/menu_offboard"
+        android:title="@string/menu_offboard"/>
+
+</menu>

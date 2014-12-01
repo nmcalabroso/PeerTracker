@@ -11,6 +11,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.TextView;
 
+import java.io.UnsupportedEncodingException;
+
 public class NetworkAdapter extends ArrayAdapter<ScanResult> implements ListAdapter {
 
     public final static String TAG = "NetworkAdapter";
@@ -26,11 +28,6 @@ public class NetworkAdapter extends ArrayAdapter<ScanResult> implements ListAdap
     public NetworkAdapter(Context context, int resource) {
         super(context, resource);
         m_layoutInflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-    }
-
-    @Override
-    public int getItemViewType(int position) {
-        return 1;
     }
 
     public View getView(int position, View convertView, ViewGroup parent) {
@@ -51,5 +48,10 @@ public class NetworkAdapter extends ArrayAdapter<ScanResult> implements ListAdap
         int level = WifiManager.calculateSignalLevel(getItem(position).level, 100) + 1;
         holder.textNetworkLevel.setText(Integer.toString(level)+"%");
         return rowView;
+    }
+
+    @Override
+    public int getItemViewType(int position) {
+        return 1;
     }
 }

@@ -1,6 +1,8 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.neil.peertracker.PeersListActivity">
-    <item android:id="@+id/action_settings" android:title="@string/action_settings"
-        android:orderInCategory="100" android:showAsAction="never" />
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/context_menu_announce"
+        android:title="@string/context_menu_announce"/>
+    <item
+        android:id="@+id/context_menu_onboarding"
+        android:title="@string/context_menu_onboarding"/>
 </menu>

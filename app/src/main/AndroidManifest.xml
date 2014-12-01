@@ -36,6 +36,24 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.neil.peertracker.MainActivity" />
         </activity>
+
+        <activity
+            android:name=".PeersListActivity"
+            android:label="@string/title_activity_peers_list"
+            android:parentActivityName=".NetworksListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.neil.peertracker.PeersListActivity" />
+        </activity>
+
+        <activity
+            android:name="com.example.neil.peertracker.OnboardingActivity"
+            android:label="@string/title_activity_onboarding"
+            android:parentActivityName="com.example.neil.peertracker.PeersListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.neil.peertracker.PeersListActivity" />
+        </activity>
     </application>
 
 </manifest>
