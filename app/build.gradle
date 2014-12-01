@@ -32,4 +32,5 @@ dependencies {
     compile files('libs/NSCommons.jar')
     compile files('libs/NSNativePlatformAndr.jar')
     compile files('libs/armeabi.jar')
+    compile files('libs/alljoyn_apps_android_utils.jar')
 }

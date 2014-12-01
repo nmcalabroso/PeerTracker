@@ -84,6 +84,7 @@
     <orderEntry type="library" exported="" name="alljoyn_about" level="project" />
     <orderEntry type="library" exported="" name="ControlPanelAdapter" level="project" />
     <orderEntry type="library" exported="" name="alljoyn_config" level="project" />
+    <orderEntry type="library" exported="" name="alljoyn_apps_android_utils" level="project" />
     <orderEntry type="library" exported="" name="ControlPanelService" level="project" />
     <orderEntry type="library" exported="" name="alljoyn" level="project" />
     <orderEntry type="library" exported="" name="alljoyn_onboarding" level="project" />

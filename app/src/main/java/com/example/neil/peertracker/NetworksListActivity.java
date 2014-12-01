@@ -6,6 +6,7 @@ import android.app.ProgressDialog;
 import android.content.BroadcastReceiver;
 import android.net.wifi.ScanResult;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -42,7 +43,6 @@ public class NetworksListActivity extends ListActivity {
 
     public void scanNetwork(View view) {
         m_progressDialog = ProgressDialog.show(NetworksListActivity.this, "", getString(R.string.network_activity_scanning));
-        System.out.println(getApplicationContext());
         m_networkManager.scanForNetwork(getApplicationContext(), new WifiManagerListener() {
             public void OnScanResultComplete(final List<ScanResult> results) {
                 runOnUiThread(new Runnable() {
@@ -58,7 +58,7 @@ public class NetworksListActivity extends ListActivity {
                 Timer timer = new Timer();
                 timer.schedule(new TimerTask() {
                     public void run() {
-                        if (m_progressDialog!=null && m_progressDialog.isShowing()) {
+                        if (m_progressDialog != null && m_progressDialog.isShowing()) {
                             m_progressDialog.dismiss();
                         }
                     }

@@ -12,7 +12,7 @@ public class Peer {
     public String uuid;
     public String busName;
     public String displayName;
-    public String password;
+    public char[] password;
 
     public short port;
     public boolean supportOnboarding = false;
@@ -21,7 +21,7 @@ public class Peer {
     public Map<String, Object> aboutMap;
 
     public Peer(String uuid, String busName, String displayName,
-                String password, short port, BusObjectDescription[] interfaces,
+                char[] password, short port, BusObjectDescription[] interfaces,
                 Map<String, Object> aboutMap) {
 
         this.uuid = uuid;
